@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_11_14_010457) do
+ActiveRecord::Schema.define(version: 2018_11_14_013627) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -22,7 +22,7 @@ ActiveRecord::Schema.define(version: 2018_11_14_010457) do
     t.string "status", default: "PENDING", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["cat_id"], name: "index_cat_rental_requests_on_cat_id", unique: true
+    t.index ["cat_id"], name: "index_cat_rental_requests_on_cat_id"
   end
 
   create_table "cats", force: :cascade do |t|
